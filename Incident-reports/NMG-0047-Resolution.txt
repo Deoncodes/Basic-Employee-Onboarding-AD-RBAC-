@@ -1,0 +1,15 @@
+Ticket number: NMG-0047
+
+Affected user: Jane Cooper (jcooper@NMG.com)
+
+Issue reported: Unable to access HR shared resources. Desktop policies and mapped drives differ from teammates.
+
+Root cause: A random search in the DC using her sAMAccount name revealed her account was onboarded and placed under the Operations OU, she was also assigned Operations-users role which gave her access to UIs she and dash she shouldn't have had
+
+Fix applied: I moved her account from the Operations OU to HR OU, i unassigned the operations-users role from her account, i assigned the HR-users role to her account. Those roles contains policies that govern their account access
+
+Verification: I verified her accont presence in the HR OU and also verified all accesses she had by viewing properties in her account.
+
+Date resolved: 07/14/2026
+
+Resolved by: IT New Hire
