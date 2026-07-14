@@ -1,0 +1,7 @@
+Domain name: NMG.com
+OUs created: Finance, HR, IT, Operations
+Security groups created: Finance-Users, HR-Users, IT-Users, Operations-Users
+Finance- This group was created to manage the Finance department, every employee that has housed under this OU would have privileges allowed for this OU alone
+HR- This group was created to manage the HR department, every employee that has housed under this OU would have privileges allowed for this OU alone
+IT - This group was created to manage the ITdepartment, every employee that has housed under this OU would have privileges allowed for this OU alone
+Operations - This group was created to manage the Operations department, every employee that has housed under this OU would have privileges allowed for this OU alone
