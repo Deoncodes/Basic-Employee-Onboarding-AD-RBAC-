@@ -8,9 +8,6 @@ Northstar Medical Group fictional company,  they are fast growing currently expe
 TThe solution was to take full ownership of the problem and overall architecture of NMG, started out by building a basic employee onboarding pipeline in AD. I Created OU's for each department in NMG and created Security-Groups with specific policies that varied according to each department. This would ensure there are no overlaps with permissions, access and ensure more security. Created a consistent digital identity for every employee in NMG and assigned attributes that would sync across all our systems, assigned access using RBAC enforcing principle of least privilege. This would ensure consistency, scalability and auditability. Made sure to create proper documentation of each process for reference and accurate bookkeeping.
 I also simulated a mock ticket where a user was provisioned an incorrect level of access and resolved it.
 
-## Video Walkthrough
-[Add your video walkthrough link placeholder here. You will record this tomorrow and update this link so visitors can see a live demonstration of your lab environment.]
-
 ## Tools Used
 * Windows Server
 * Active Directory Domain Services
