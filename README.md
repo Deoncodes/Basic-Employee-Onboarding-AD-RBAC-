@@ -1,2 +1,38 @@
 # Basic-Employee-Onboarding-AD-RBAC
 Active Directory infrastructure rebuild for a fictional company called “Northstar Medical Group”. Includes domain setup, organisational structure, user provisioning, RBAC implementation, and incident resolution.
+
+## Problem Statement
+Northstar Medical Group is currently experiencing difficulties with most of their processes because of a foundational issue that spreads wide. Their whole infrastructure was previously outsourced to be managed by an MSP who did a very terrible job that has led to so many other issues- the AD environment is completely disorganzised, off-boarding and onboarding of employees is done manually with no sort of documentation for tracking or reference procedure, some accounts have less privilege than they should have while some have more, zero consistency across board. This is healthcare and HIPAA is not a joke.
+
+## Solution Overview
+Took ownership of the problem and overall architecture of NMG, started by building out a DC named NMG.com - This is the spine and everything else we built depended on this being done right
+Created OU's for each department in NMG and created Security-Groups with specific policies that varied according to each department. This would ensure there are no overlaps with permissions, access and ensure more security.
+Created a consistent digital identity for every employee in NMG  and assigned attributes that would sync across all our systems, assigned access using RBAC enforcing principle of least privilege. This would ensure consistency, scalability and auditability.
+Made sure to create proper documentation of each process for reference and accurate bookkeeping
+
+## Video Walkthrough
+[Add your video walkthrough link placeholder here. You will record this tomorrow and update this link so visitors can see a live demonstration of your lab environment.]
+
+## Tools Used
+* Windows Server
+* Active Directory Domain Services
+* VirtualBox
+* UTM
+* CLI
+* GitHub
+* Group Policy
+
+## Project Timeline
+* Day 1: Domain creation and domain controller promotion
+* Day 2: Organizational unit and security group design
+* Day 3: User provisioning and RBAC implementation
+* Day 4: Incident response and resolution (NMG-0047)
+* Day 5: Documentation and case study packaging
+
+## Key Accomplishments
+* Built NMG.com domain from scratch
+* Designed department-based OU structure (Finance, HR, IT, Operations)
+* Implemented RBAC with security groups mapped to each department
+* Provisioned 15 user accounts with consistent naming conventions and attribute standards
+* Documented full incident resolution with root cause analysis
+* Diagnosed and resolved a multi-cause access issue (wrong OU + missing group membership)
